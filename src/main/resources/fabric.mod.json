@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "growth",
+	"version": "${version}",
+	"name": "Growth",
+	"description": "A mod about an expanding biomass",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://github.com/Heroshrine",
+		"sources": "https://github.com/Heroshrine/growth"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/growth/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"heroshrine.growth.Growth"
+		],
+		"client": [
+			"heroshrine.growth.GrowthClient"
+		],
+		"fabric-datagen": [
+			"heroshrine.growth.GrowthDataGenerator"
+		]
+	},
+	"mixins": [
+		"growth.mixins.json",
+		{
+			"config": "growth.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
