@@ -1,5 +1,8 @@
 package heroshrine.growth;
 
+import heroshrine.growth.registry.GrowthBlocks;
+import heroshrine.growth.registry.GrowthItemGroups;
+import heroshrine.growth.registry.GrowthItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.util.Identifier;
@@ -20,7 +23,9 @@ public class Growth implements ModInitializer {
         // However, some things (like resources) may still be uninitialized.
         // Proceed with mild caution.
 
-        LOGGER.info("Hello Fabric world!");
+        GrowthItems.initialize();
+        GrowthBlocks.initialize();
+        GrowthItemGroups.initialize();
     }
 
     public static Identifier id(String name) {

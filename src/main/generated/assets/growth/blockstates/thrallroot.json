@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "growth:block/thrallroot"
+      },
+      {
+        "model": "growth:block/thrallroot",
+        "y": 90
+      },
+      {
+        "model": "growth:block/thrallroot",
+        "y": 180
+      },
+      {
+        "model": "growth:block/thrallroot",
+        "y": 270
+      }
+    ]
+  }
+}
